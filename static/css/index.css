@@ -1,0 +1,14 @@
+.page-head {
+	background: #1E90FF;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-head h1, .page-head  h1 a, .page-head  h1 a:visited, .page-head  h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+.page-head h1:hover, .page-head  h1 a:hover{
+	color:#0000FF;
+}
