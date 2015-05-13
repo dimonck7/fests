@@ -1,7 +1,7 @@
 {% load staticfiles%}
 <html>
 	<head>
-		<title>Fests</title>
+		<title>Самые странные праздники мира</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="{% static 'css/index.css' %}">
@@ -10,17 +10,22 @@
 		<div class= "page-head">
 			<div class="row">
                 <div class="col-md-12">
-					<h1></a><a href="/">FES<span class="glyphicon glyphicon-flag"></span></a<</h1>
+					<h1></a><a href="/" id= "head-text">Самые странные праздники мира<span class="glyphicon glyphicon-flag"></span></a<</h1>
 				</div>
 			</div>		
 		</div>
         <div class="content container">
             <div class="row">
 				<div class="col-md-3">
-					<ul>
-						<li><a href = "/">Home</a></li>
-						<li><a href = "{%url 'content' %}">Posts</a></li>
-						<li>About</li>
+					<ul class="menu">
+						<li><a href = "/">Гланая</a></li>
+						<li><a href = "{%url 'content' %}">Странные Праздники</a>
+							<!--<ul class = "menu-1">
+								<li><a href="{%url 'post1' %}">Лас Файяс</a></li>
+								<li><a href="{%url 'post2' %}">Катящийся сыр</a></li>
+							</ul>-->
+						</li>
+						<li><a href = "">Ваше Мнения</a></li>
 					</ul>
                 </div>
                 <div class="col-md-6">

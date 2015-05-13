@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Russo+One&subset=cyrillic,latin);
+@import url(http://fonts.googleapis.com/css?family=Scada:400italic&subset=cyrillic,latin);
+
 .page-head {
 	background: #1E90FF;
     margin-top: 0;
@@ -11,4 +14,35 @@
 }
 .page-head h1:hover, .page-head  h1 a:hover{
 	color:#0000FF;
+}
+
+#head-text {
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+	
+}
+
+.menu {
+	background: #1E90FF;
+	width: 225px;
+}
+
+.menu ul li {
+	float: left;
+	position: relative;
+}
+
+.menu li a {
+	color:#ffffff;
+	padding: 15 px 25 px;
+	font-family: 'Scada', sans-serif;
+	text-decoration: none;
+	line-height: 30px;
+	display: block;
+}
+
+.menu li a:hover {
+	background:#F8F8FF;
+	color:#0000FF;
+	text-decoration: undeline;
 }
