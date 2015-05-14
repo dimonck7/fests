@@ -5,12 +5,13 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="{% static 'css/index.css' %}">
+		<link rel="icon" href="https://cdn4.iconfinder.com/data/icons/32x32-free-design-icons/32/RGB.png">
 	</head>
 	<body>
 		<div class= "page-head">
 			<div class="row">
                 <div class="col-md-12">
-					<h1></a><a href="/" id= "head-text">Самые странные праздники мира<span class="glyphicon glyphicon-flag"></span></a<</h1>
+					<h1></a><a href="{%url 'content' %}" id= "head-text">Самые странные праздники мира <span class="glyphicon glyphicon-flag"></span></a<</h1>
 				</div>
 			</div>		
 		</div>
@@ -18,23 +19,39 @@
             <div class="row">
 				<div class="col-md-3">
 					<ul class="menu">
-						<li><a href = "/">Гланая</a></li>
-						<li><a href = "{%url 'content' %}">Странные Праздники</a>
-							<!--<ul class = "menu-1">
-								<li><a href="{%url 'post1' %}">Лас Файяс</a></li>
-								<li><a href="{%url 'post2' %}">Катящийся сыр</a></li>
-							</ul>-->
-						</li>
-						<li><a href = "">Ваше Мнения</a></li>
+						<!--<li><a href = "/">Гланая</a></li>-->
+						<li><a href = "{%url 'content' %}">Странные Праздники</a></li>
+						<li id = "all"><span class="glyphicon glyphicon-hand-down"></span>Прaздники<span class="glyphicon glyphicon-hand-down"></span></li>
+						<li><a href="{%url 'post1' %}">Лас Файяс</a></li>
+						<li><a href="{%url 'post2' %}">Катящийся сыр</a></li>
+						<li id = "all"><span class="glyphicon glyphicon-hand-up"></span>Прaздники<span class="glyphicon glyphicon-hand-up"></span></li>
+						<li><a href = "{%url 'you' %}">Ваше Мнения</a></li>
 					</ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-9">
                     {% block content %}
                     {% endblock %}
                 </div>
             </div>
-        </div>
-		
+			
+			<br>
+			<br>
+			
+			<footer class="text-center">
+				<div class="footer-below">
+					<div class="container">
+						<p>
+							<a href="#" id ="f">Back to top</a>
+						</p>
+					  <p>
+						Fests© 2015
+					  </p>
+					  <p>
+						Created by Dima Chuvardinsky
+					  </p>
+					</div>  
+				</footer>
+			<br>	
 	</body>
 </html>
 

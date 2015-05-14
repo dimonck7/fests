@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.views.generic import TemplateView
 
 class IndexView(TemplateView):
@@ -11,3 +12,6 @@ class Post1View(TemplateView):
 
 class Post2View(TemplateView):
    template_name = "fest/post2.html"
+
+class YouView(TemplateView):
+   template_name = "fest/you.html"
